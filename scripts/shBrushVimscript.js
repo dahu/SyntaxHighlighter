@@ -246,8 +246,8 @@ SyntaxHighlighter.brushes.Vimscript = function()
     'toupper tr trunc undofile undotree values virtcol visualmode winbufnr wincol winheight winline winnr ' +
     'winrestcmd winrestview winsaveview winwidth writefile ';
 
-  var operators = '+ - * / += -= *= /= % | || && == != > >= < <= =~ !~ ==# !=# >#  >=# ' +
-    '<#  <=# =~# !~# ==? !=? >?  >=?  <?  <=? =~? !~?  is isnot is# isnot# is? isnot? ';
+  var operators = '\+ - \* \/ \+= -= \*= \/= % \| || && == != > >= < <= =~ !~ ==# !=# >#  >=# ' +
+    '<#  <=# =~# !~# ==\? !=\? >\?  >=\?  <\?  <=\? =~\? !~\?  is isnot is# isnot# is\? isnot\? ';
 
   SyntaxHighlighter.regexLib.singleLineVimscriptComments = /^\s*".*$/gm ;
   SyntaxHighlighter.regexLib.keyMappings = /(\<|&lt;)\w[-\w\[\]]+(\>|&gt;)/ig ;
@@ -264,7 +264,7 @@ SyntaxHighlighter.brushes.Vimscript = function()
   { regex: new RegExp(this.getKeywords(keywords), 'gm'),             css: 'keyword' },    // keywords
   { regex: new RegExp(this.getKeywords(vimLet), 'gm'),               css: 'keyword' },    // keywords
   { regex: new RegExp(this.getKeywords(builtins), 'gm'),             css: 'keyword' },    // keywords
-  { regex: new RegExp(this.getKeywords(operators), 'gm'),            css: 'color1' },     // operators
+  { regex: new RegExp(this.getKeywords(operators), 'gmi'),           css: 'color1' },     // operators
   { regex: new RegExp(this.getKeywords(funcs), 'gm'),                css: 'color2' }      // functions
   ];
 
