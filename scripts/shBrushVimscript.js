@@ -264,7 +264,7 @@ SyntaxHighlighter.brushes.Vimscript = function()
   { regex: new RegExp(this.getKeywords(keywords), 'gm'),             css: 'keyword' },    // keywords
   { regex: new RegExp(this.getKeywords(vimLet), 'gm'),               css: 'keyword' },    // keywords
   { regex: new RegExp(this.getKeywords(builtins), 'gm'),             css: 'keyword' },    // keywords
-  { regex: new RegExp(this.getKeywords(operators), 'gmi'),           css: 'color1' },     // operators
+  //{ regex: new RegExp(this.getKeywords(operators), 'gmi'),           css: 'color1' },     // operators
   { regex: new RegExp(this.getKeywords(funcs), 'gm'),                css: 'color2' }      // functions
   ];
 
