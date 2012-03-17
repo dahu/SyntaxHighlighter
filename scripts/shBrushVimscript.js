@@ -115,7 +115,7 @@ SyntaxHighlighter.brushes.Vimscript = function()
     'ce center cgete cgetexpr che checkpath cmapc cmapclear cNf ' +
     'cNfile conf confirm cp cprevious debugg debuggreedy diffg diffget ' +
     'diffthis dl dlist echoe echoerr elsei elseif en endif ' +
-    'exi exit fina finally fo fold for ' +
+    'exi exit fina finally fo fold for  in' +
     'echohl';
   // additional miscelanious keywords,
 
