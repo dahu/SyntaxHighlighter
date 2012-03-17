@@ -249,23 +249,23 @@ SyntaxHighlighter.brushes.Vimscript = function()
   var operators = '+ - * / += -= *= /= % | || && == != > >= < <= =~ !~ ==# !=# >#  >=# ' +
     '<#  <=# =~# !~# ==? !=? >?  >=?  <?  <=? =~? !~?  is isnot is# isnot# is? isnot? ';
 
-  SyntaxHighlighter.regexLib.singleLineVimscriptComments = /^\s*".*$/gm
-    SyntaxHighlighter.regexLib.keyMappings = /(\<|&lt;)\w[-\w\[\]]+(\>|&gt;)/ig
+  SyntaxHighlighter.regexLib.singleLineVimscriptComments = /^\s*".*$/gm ;
+  SyntaxHighlighter.regexLib.keyMappings = /(\<|&lt;)\w[-\w\[\]]+(\>|&gt;)/ig ;
 
-    this.regexList = [
-    { regex: SyntaxHighlighter.regexLib.singleLineVimscriptComments,   css: 'comments' },   // one line comments
-    { regex: SyntaxHighlighter.regexLib.keyMappings,                   css: 'color3' },     // Vimscript key mappings (e.g. <CR> <C-S-[>)
-    { regex: SyntaxHighlighter.regexLib.doubleQuotedString,            css: 'string' },     // double quoted strings
-    { regex: SyntaxHighlighter.regexLib.singleQuotedString,            css: 'string' },     // single quoted strings
-    { regex: new RegExp(this.getKeywords(options), 'gm'),              css: 'keyword' },    // options
-    { regex: new RegExp(this.getKeywords(vimMap), 'gm'),               css: 'keyword' },    // options
-    { regex: new RegExp(this.getKeywords(vimUserAttrbCmplt), 'gm'),    css: 'keyword' },    // options
-    { regex: new RegExp(this.getKeywords(vimAutoCmd), 'gm'),           css: 'keyword' },    // options
-    { regex: new RegExp(this.getKeywords(keywords), 'gm'),             css: 'keyword' },    // keywords
-    { regex: new RegExp(this.getKeywords(vimLet), 'gm'),               css: 'keyword' },    // keywords
-    { regex: new RegExp(this.getKeywords(builtins), 'gm'),             css: 'keyword' },    // keywords
-    { regex: new RegExp(this.getKeywords(operators), 'gm'),            css: 'color1' },     // operators
-    { regex: new RegExp(this.getKeywords(funcs), 'gm'),                css: 'color2' }      // functions
+  this.regexList = [
+  { regex: SyntaxHighlighter.regexLib.singleLineVimscriptComments,   css: 'comments' },   // one line comments
+  { regex: SyntaxHighlighter.regexLib.keyMappings,                   css: 'color3' },     // Vimscript key mappings (e.g. <CR> <C-S-[>)
+  { regex: SyntaxHighlighter.regexLib.doubleQuotedString,            css: 'string' },     // double quoted strings
+  { regex: SyntaxHighlighter.regexLib.singleQuotedString,            css: 'string' },     // single quoted strings
+  { regex: new RegExp(this.getKeywords(options), 'gm'),              css: 'keyword' },    // options
+  { regex: new RegExp(this.getKeywords(vimMap), 'gm'),               css: 'keyword' },    // options
+  { regex: new RegExp(this.getKeywords(vimUserAttrbCmplt), 'gm'),    css: 'keyword' },    // options
+  { regex: new RegExp(this.getKeywords(vimAutoCmd), 'gm'),           css: 'keyword' },    // options
+  { regex: new RegExp(this.getKeywords(keywords), 'gm'),             css: 'keyword' },    // keywords
+  { regex: new RegExp(this.getKeywords(vimLet), 'gm'),               css: 'keyword' },    // keywords
+  { regex: new RegExp(this.getKeywords(builtins), 'gm'),             css: 'keyword' },    // keywords
+  { regex: new RegExp(this.getKeywords(operators), 'gm'),            css: 'color1' },     // operators
+  { regex: new RegExp(this.getKeywords(funcs), 'gm'),                css: 'color2' }      // functions
   ];
 
   this.forHtmlScript(SyntaxHighlighter.regexLib.scriptScriptTags);
