@@ -234,7 +234,7 @@ SyntaxHighlighter.brushes.Vimscript = function()
     'getftype getline getline getloclist getmatches getpid getpos getqflist getreg getregtype gettabvar ' +
     'gettabwinvar getwinposx getwinposy getwinvar globpath has_key haslocaldir hasmapto histadd histdel ' +
     'histget histnr hlexists hostname iconv indent index input inputdialog inputlist inputrestore ' +
-    'inputsave inputsecret insert isdirectory islocked items libcall libcallnr line2byte lispindent localtime ' +
+    'inputsave inputsecret insert isdirectory islocked items len libcall libcallnr line2byte lispindent localtime ' +
     'log10 maparg mapcheck match matchadd matcharg matchdelete matchend matchlist matchstr mkdir mzeval ' +
     'nextnonblank nr2char pathshorten prevnonblank printf pumvisible range readfile reltime reltimestr ' +
     'remote_expr remote_foreground remote_peek remote_read remote_send remove remove rename repeat resolve ' +
