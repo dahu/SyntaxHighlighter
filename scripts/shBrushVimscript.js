@@ -246,8 +246,8 @@ SyntaxHighlighter.brushes.Vimscript = function()
     'toupper tr trunc undofile undotree values virtcol visualmode winbufnr wincol winheight winline winnr ' +
     'winrestcmd winrestview winsaveview winwidth writefile ';
 
-  var operators = '\+ - \* \/ \+= -= \*= \/= % \| || && == != > >= < <= =~ !~ ==# !=# >#  >=# ' +
-    '<#  <=# =~# !~# ==\? !=\? >\?  >=\?  <\?  <=\? =~\? !~\?  is isnot is# isnot# is\? isnot\? ';
+  var operators = '\+ - \* \/ \+= -= \*= \/= % \| || && == != \> \>= \< \<= =~ !~ ==# !=# \>#  \>=# ' +
+    '\<#  \<=# =~# !~# ==\? !=\? \>\?  \>=\?  \<\?  \<=\? =~\? !~\?  is isnot is# isnot# is\? isnot\? ';
 
   SyntaxHighlighter.regexLib.singleLineVimscriptComments = /^\s*".*$/gm ;
   SyntaxHighlighter.regexLib.keyMappings = /(\<|&lt;)\w[-\w\[\]]+(\>|&gt;)/ig ;
